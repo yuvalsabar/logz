@@ -1,0 +1,21 @@
+// out: false
+
+[type="button"],
+[type="reset"],
+[type="submit"],
+button {
+    font-family: "Assistant", sans-serif;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #FFF;
+    border: none;
+    background-color: #007BFF;
+
+    -webkit-appearance: none;
+}
+button:hover,
+[type="button"]:hover,
+[type="reset"]:hover,
+[type="submit"]:hover {
+    opacity: .9;
+}

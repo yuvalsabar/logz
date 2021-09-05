@@ -1,0 +1,37 @@
+// out: false
+
+#site-wrap {
+    position: relative;
+    min-height: 100%;
+}
+.container,
+.block-container,
+.wp-block-columns {
+    max-width: 1140px;
+}
+.block-container,
+.wp-block-columns {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.wp-block-columns {
+    margin: auto auto 0;
+    .block-container {
+        padding: 0;
+    }
+}
+.bold {
+    font-weight: bold;
+}
+.italic {
+    font-style: italic;
+}
+.underline {
+    text-decoration: underline;
+}
+.fancybox-slide--html {
+    padding: 20px;
+}

@@ -1,0 +1,64 @@
+// out: false
+
+.sprite {
+    display: inline-block;
+    background-image: url(../../assets/img/sprite.png);
+    background-repeat: no-repeat;
+}
+.alignleft {
+    float: left;
+    margin-right: 20px;
+}
+.alignright {
+    float: right;
+    margin-left: 20px;
+}
+.aligncenter {
+    display: block;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row.no-gutters {
+    margin-right: 0;
+    margin-left: 0;
+}
+.row.no-gutters > [class^="col-"],
+.row.no-gutters > [class*=" col-"] {
+    padding-right: 0;
+    padding-left: 0;
+}
+.loader {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    animation: spin 2s linear infinite;
+    border: 6px solid #F3F3F3;
+    border-top: 6px solid #3498DB;
+    border-radius: 50%;
+}
+@keyframes spin {
+    0% {
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+.sr-only {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+.fade-in {
+    transition: all .5s ease;
+    opacity: 0;
+}
+.cols {
+    display: flex;
+}

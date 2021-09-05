@@ -1,0 +1,82 @@
+// out: false
+
+.site-header {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    padding: 0 60px;
+    transition: all 300ms ease;
+    @media only screen and (max-width: $tablet_viewport) {
+        padding: 0 15px;
+    }
+    @media only screen and (max-width: $tablet) {
+        height: auto;
+        padding: 0;
+    }
+}
+.sticky {
+    .site-header {
+        height: 60px;
+        background: #FFF;
+        box-shadow: 0 1px 6px 0 rgba(0, 0, 0, .16);
+        .btn--white {
+            border: 2px solid $yellow;
+            background: $yellow;
+        }
+        .login-link {
+            color: $main_blue;
+        }
+    }
+    .site-logo {
+        * {
+            fill: $main_blue;
+        }
+    }
+}
+.site-logo {
+    margin-right: 50px;
+    @media only screen and (max-width: $tablet_viewport) {
+        margin-right: 30px;
+    }
+    @media only screen and (max-width: $tablet) {
+        margin-right: 0;
+    }
+}
+.header-desktop {
+    display: flex;
+    width: 100%;
+    @media only screen and (max-width: $tablet) {
+        display: none;
+    }
+}
+.header-options {
+    .btn--get-started {
+        font-weight: 500;
+        margin-right: 15px;
+    }
+    .btn--request-demo {
+        margin-right: 30px;
+    }
+    .login-link {
+        font-size: 1.4rem;
+        font-weight: 600;
+        color: #FFF;
+    }
+}
+.header-mobile {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 60px;
+    padding: 15px 20px;
+    @media only screen and (max-width: $tablet) {
+        display: block;
+    }
+}

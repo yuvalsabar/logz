@@ -1,0 +1,41 @@
+// out: false
+
+.fancybox-content {
+    &.popup-demo-form {
+        display: none;
+        width: 385px;
+        max-width: 100%;
+        padding: 60px 50px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 24px 20px rgba(63, 92, 127, .16);
+        .popup-demo-form__title {
+            font-size: 3.2rem;
+            font-weight: 900;
+            margin-bottom: 40px;
+            text-align: center;
+            color: $main_blue;
+        }
+        .popup-demo-form__footer {
+            font-size: 1.2rem;
+            font-weight: 700;
+            line-height: 1.5;
+            padding-top: 10px;
+            text-align: center;
+            color: #A6ABC4;
+            a {
+                text-decoration: underline;
+            }
+        }
+        .form-sent {
+            font-weight: 700;
+            line-height: 1.5;
+            display: none;
+            text-align: center;
+        }
+        @media only screen and (max-width: $mobile) {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+}

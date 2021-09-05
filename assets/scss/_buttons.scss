@@ -1,0 +1,24 @@
+// out: false
+
+.btn {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 36px;
+    padding: 0 15px;
+    text-align: center;
+    color: $main_blue;
+    border: 2px solid $main_blue;
+    border-radius: 80px;
+    &--white {
+        border: 2px solid $white;
+        background: $white;
+    }
+    &--white-border {
+        color: #FFF;
+        border: 2px solid $white;
+        background: none;
+    }
+}

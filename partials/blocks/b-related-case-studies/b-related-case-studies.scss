@@ -1,0 +1,103 @@
+// out: true, compress: true
+
+@import "../../../assets/scss/variables";
+
+.b-related-case-studies {
+    &__title {
+        font-size: 1.4rem;
+        font-weight: 800;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+    }
+    .case-studies__wrap {
+        padding: 40px 0 55px;
+        background: #F3F4FA;
+        @media only screen and (max-width:$mobile) {
+            padding-bottom: 30px;
+        }
+    }
+    .row-case-studies {
+        margin-bottom: 20px;
+        @media only screen and (max-width: $mobile) {
+            margin-bottom: 0;
+        }
+    }
+    .case-study {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        margin-bottom: 30px;
+        padding: 40px 30px 35px;
+        transition: all 500ms ease;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 10px 20px -6px rgba(79, 118, 178, .14);
+        &__logo {
+            display: flex;
+            align-items: center;
+            height: 70px;
+            margin-bottom: 35px;
+            img {
+                width: auto;
+                max-height: 70px;
+            }
+        }
+        &__title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+        &__excerpt {
+            font-size: 1.4rem;
+            line-height: 1.5;
+            overflow: hidden;
+            height: 45px;
+        }
+        &__link {
+            margin-top: auto;
+            text-align: center;
+        }
+        &__read {
+            font-size: 1.2rem;
+            font-weight: 800;
+            transition: color 150ms ease;
+            text-align: center;
+            color: $light_blue;
+            &-text {
+                &:after {
+                    font-family: $font-icomoon;
+                    font-size: .8rem;
+                    margin-left: 2px;
+                    content: "\e901";
+                }
+            }
+        }
+        &:hover {
+            transform: translateY(-5px);
+            .case-study__read {
+                color: $blue;
+            }
+        }
+    }
+    .row-back {
+        text-align: center;
+    }
+    .back {
+        &__link {
+            transition: color 150ms ease;
+            &-text {
+                font-size: 1.2rem;
+                font-weight: 800;
+                &:before {
+                    font-family: $font-icomoon;
+                    font-size: .8rem;
+                    margin-right: 5px;
+                    content: "\e902";
+                }
+            }
+            &:hover {
+                color: #2CB98F;
+            }
+        }
+    }
+}

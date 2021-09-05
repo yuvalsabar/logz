@@ -1,0 +1,74 @@
+// out: false
+
+.main-navigation-wrap {
+    display: flex;
+    .main-navigation {
+        display: flex;
+        align-items: center;
+        .menu {
+            display: flex;
+            > li {
+                position: relative;
+                margin-right: 30px;
+                @media only screen and (max-width: $tablet_viewport) {
+                    margin-right: 10px;
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+                a {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                    position: relative;
+                    display: block;
+                    padding: 10px;
+                    color: #FFF;
+                    &:after {
+                        position: absolute;
+                        top: calc(100% - 2px);
+                        left: 50%;
+                        display: block;
+                        visibility: hidden;
+                        width: 5px;
+                        height: 5px;
+                        content: "";
+                        transition: opacity 150ms ease;
+                        transform: translateX(-50%);
+                        opacity: 0;
+                        border-radius: 50%;
+                        background: transparent;
+                    }
+                }
+                &.current-page-ancestor,
+                &.current-post-ancestor,
+                &.current-menu-parent,
+                &.current-menu-item,
+                &:hover {
+                    a {
+                        &:after {
+                            visibility: visible;
+                            opacity: 1;
+                            background: #F7C15C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.sticky {
+    .main-navigation-wrap {
+        .main-navigation {
+            .menu {
+                > li {
+                    a {
+                        color: $main_blue;
+                    }
+                }
+            }
+        }
+    }
+}
+.header-options {
+    margin-left: auto;
+}

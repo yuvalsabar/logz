@@ -1,0 +1,126 @@
+// out: false
+
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 300;
+    font-style: normal;
+
+    src: url("../../assets/fonts/montserrat/montserrat-v18-latin-300.eot");
+    src: local(""),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-300.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-300.woff2") format("woff2"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-300.woff") format("woff"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-300.ttf") format("truetype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-300.svg#Montserrat") format("svg");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-style: normal;
+
+    src: url("../../assets/fonts/montserrat/montserrat-v18-latin-regular.eot");
+    src: local(""),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-regular.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-regular.woff2") format("woff2"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-regular.woff") format("woff"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-regular.ttf") format("truetype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-regular.svg#Montserrat") format("svg");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+
+    src: url("../../assets/fonts/montserrat/montserrat-v18-latin-600.eot");
+    src: local(""),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-600.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-600.woff2") format("woff2"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-600.woff") format("woff"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-600.ttf") format("truetype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-600.svg#Montserrat") format("svg");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-style: normal;
+
+    src: url("../../assets/fonts/montserrat/montserrat-v18-latin-700.eot");
+    src: local(""),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-700.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-700.woff2") format("woff2"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-700.woff") format("woff"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-700.ttf") format("truetype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-700.svg#Montserrat") format("svg");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-style: normal;
+
+    src: url("../../assets/fonts/montserrat/montserrat-v18-latin-800.eot");
+    src: local(""),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-800.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-800.woff2") format("woff2"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-800.woff") format("woff"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-800.ttf") format("truetype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-800.svg#Montserrat") format("svg");
+}
+@font-face {
+    font-family: "Montserrat";
+    font-weight: 900;
+    font-style: normal;
+
+    src: url("../../assets/fonts/montserrat/montserrat-v18-latin-900.eot");
+    src: local(""),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-900.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-900.woff2") format("woff2"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-900.woff") format("woff"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-900.ttf") format("truetype"),
+    url("../../assets/fonts/montserrat/montserrat-v18-latin-900.svg#Montserrat") format("svg");
+}
+@font-face {
+    font-family: "Mulish";
+    font-weight: 300;
+    font-style: normal;
+
+    src: url("../../assets/fonts/mulish/mulish-v5-latin-300italic.eot");
+    src: local(""),
+    url("../../assets/fonts/mulish/mulish-v5-latin-300italic.eot?#iefix") format("embedded-opentype"),
+    url("../../assets/fonts/mulish/mulish-v5-latin-300italic.woff2") format("woff2"),
+    url("../../assets/fonts/mulish/mulish-v5-latin-300italic.woff") format("woff"),
+    url("../../assets/fonts/mulish/mulish-v5-latin-300italic.ttf") format("truetype"),
+    url("../../assets/fonts/mulish/mulish-v5-latin-300italic.svg#Mulish") format("svg");
+}
+
+@font-face {
+    font-family: "Icomoon";
+    font-weight: normal;
+    font-style: normal;
+
+    font-display: block;
+    src: url("../../assets/fonts/icomoon/icomoon.eot");
+    src: url("../../assets/fonts/icomoon/icomoon.ttf") format("truetype"),
+    url("../../assets/fonts/icomoon/icomoon.woff") format("woff"),
+    url("../../assets/fonts/icomoon/icomoon.svg") format("svg");
+}
+.icomoon {
+    font-family: "Icomoon";
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-transform: none;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    speak: never;
+}
+.icomoon-play:before {
+    content: "\e900";
+}
+.icomoon-arrow-right {
+    content: "\e901";
+}
+.icomoon-arrow-left {
+    content: "\e902";
+}

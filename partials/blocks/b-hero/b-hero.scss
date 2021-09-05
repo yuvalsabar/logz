@@ -1,0 +1,111 @@
+// out: true, compress: true
+
+@import "../../../assets/scss/variables";
+
+.b-hero {
+    min-height: 620px;
+    padding: 160px 0 40px;
+    background-position: center;
+    background-size: cover;
+    @media only screen and (max-width: $tablet) {
+        min-height: auto;
+        padding-top: 80px;
+    }
+    @media only screen and (max-width: $mobile) {
+        background-position: -60% 0;
+    }
+    .container {
+        max-width: 1305px;
+    }
+    &__title {
+        font-size: 5.2rem;
+        font-weight: 900;
+        max-width: 700px;
+        margin-bottom: 15px;
+        color: #FFF;
+        @media only screen and (max-width: $mobile) {
+            line-height: 1.1;
+            max-width: 270px;
+        }
+    }
+    .testimonial {
+        margin-bottom: 40px;
+        &__text {
+            font-family: "Mulish";
+            font-size: 2rem;
+            font-weight: 300;
+            font-style: italic;
+            line-height: 1.5;
+            max-width: 540px;
+            margin-bottom: 25px;
+            color: #FFF;
+            @media only screen and (max-width: $mobile) {
+                max-width: 315px;
+            }
+        }
+        &__company {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            margin-right: 15px;
+            border-radius: 5px;
+            background: #FFF;
+            &-logo {
+                max-width: 100%;
+                max-height: 30px;
+            }
+        }
+        &__meta {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &__author {
+            display: flex;
+        }
+        &__name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 8px;
+            color: $white;
+        }
+        &__position {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $gray;
+        }
+    }
+    &__buttons {
+        display: flex;
+    }
+    .btn {
+        font-size: 1.3rem;
+        height: 50px;
+        padding: 0 20px;
+        &__text {
+            font-weight: 600;
+        }
+        &--video {
+            margin-right: 20px;
+            letter-spacing: -.2px;
+            .btn__text {
+                display: flex;
+                align-items: center;
+                &:before {
+                    font-family: $font-icomoon;
+                    font-size: 16px;
+                    margin-right: 15px;
+                    content: "\e900";
+                }
+            }
+        }
+        &--demo {
+            line-height: 1.4;
+            max-width: 145px;
+            padding: 0 25px;
+        }
+    }
+}
